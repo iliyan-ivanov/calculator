@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <section id="root">
+      <article class="calculator">
+        <div class="display">
+          <input class="screen-display formula-screen" readonly />
+          <input class="screen-display output-screen" readonly value="0" />
+        </div>
+        <div class="first-row">
+          <button class="button all-clear ac" value="AC">AC</button>
+          <button class="button math-operator modulus" value="%">%</button>
+          <button class="button math-operator divide" value="/">÷</button>
+        </div>
+        <div class="second-row">
+          <button class="button number" value="7">7</button>
+          <button class="button number" value="8">8</button>
+          <button class="button number" value="9">9</button>
+          <button class="button math-operator multiply" value="*">×</button>
+        </div>
+        <div class="third-row">
+          <button class="button number" value="4">4</button>
+          <button class="button number" value="5">5</button>
+          <button class="button number" value="6">6</button>
+          <button class="button math-operator subtract" value="-">−</button>
+        </div>
+        <div class="fourth-row">
+          <button class="button number" value="3">3</button>
+          <button class="button number" value="2">2</button>
+          <button class="button number" value="1">1</button>
+          <button class="button math-operator add" value="+">+</button>
+        </div>
+        <div class="fifth-row">
+          <button class="button number zero" value="0">0</button>
+          <button class="button number decimal" value=".">.</button>
+          <button class="button math-operator equals" value="=">=</button>
+        </div>
+      </article>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
