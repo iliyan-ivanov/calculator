@@ -68,6 +68,46 @@ calculator.addEventListener("click", (e) => {
     currentOperand = "";
   }
 
-  
+  function appendMathOperator(operator) {
+    if (currentOperand === "") {
+        return;
+    };
 
-  
+    if (previousOperand !== "") {
+      calculation();
+    }
+
+    if (operator == "%") {
+        currentOperand = currentOperand / 100;
+    } else {
+        mathOperator = operator;
+        previousOperand = currentOperand;
+        currentOperand = "";
+    }
+  }
+
+  function calculation() {
+    let result;
+    const previousValue = parseFloat(previousOperand);
+    const currentValue = parseFloat(currentOperand);
+    switch (mathOperator) {
+      case "/":
+        result = previousValue / currentValue;
+        break;
+      case "*":
+        result = previousValue * currentValue;
+        break;
+      case "-":
+        result = previousValue - currentValue;
+        break;
+      case "+":
+        result = previousValue + currentValue;
+        break;
+      default:
+        return;
+    }
+    
+    currentOperand = result;
+    mathOperator = undefined;
+    previousOperand = "";
+  }  
