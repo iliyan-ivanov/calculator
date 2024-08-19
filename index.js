@@ -60,7 +60,13 @@ calculator.addEventListener("click", (e) => {
     }
   }
 
-  
+  function clear() {
+    formulaScreen.value = "";
+    outputScreen.value = 0;
+    mathOperator = undefined;
+    previousOperand = "";
+    currentOperand = "";
+  }
 
   
 
