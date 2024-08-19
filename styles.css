@@ -16,15 +16,13 @@ body {
     width: 300px;
     height: 420px;
     padding: 15px;
-    background: rgb(101, 94, 169);
-    border: 2px solid black;
+    background: black;
 }
 
 .display {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
-    border: 2px solid black;
 }
 
 .screen-display {
