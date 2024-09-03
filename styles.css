@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.calculator {
+    width: 300px;
+    height: 420px;
+    padding: 15px;
+    background: black;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.screen-display {
+    text-align: right;
+}
+
+input {
+    height: 50px;
+    padding: 0px 20px;
+    border: 1px white;
+    font-size: 20px;
+}
+
+button {
+    margin: 0;
+    width: 25%;
+    height: 60px;
+    font-size: 20px;
+}
+
+.ac {
+    background: rgb(229, 93, 93);
+    width: 50%;
+}
+
+.zero {
+    width: 50%;
+}
+
+.number {
+    background: rgb(106, 243, 175);
+}
+
+.math-operator {
+    background: rgb(232, 197, 130);
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+    display: flex;
+}
+
+
+
